@@ -70,6 +70,10 @@ header nav ul li a:hover{
     color: #ffffff;
 }
 
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../img/hamburgesa_icono.png);
+}
+
 .boton-nav{
     background-color: #ffb7fe;
     border: #ffb7fe;
@@ -338,6 +342,39 @@ footer h3{
     grid-row: span 2;
 }
 
+.card-nosotros{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.card-nosotros h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #323232;
+    text-align: center;
+}
+
+img.card-img-top{
+    width: 72px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card-calidad{
+    justify-items: center;
+    align-content: center;
+    background-color: rgb(219, 219, 219);
+    width: 400px;
+    border-radius: 14px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
 /*----SERVICIOS HTML-----*/
 
 .main-servicios h3{
@@ -398,7 +435,6 @@ footer h3{
     }   
     }
 
-
 /*----galeria NOSOTROS-----*/
 @media screen and (max-width:950px) {
     .grid-galeria{
@@ -423,6 +459,19 @@ footer h3{
     .grid-item{
         grid-column: span 1;
         grid-column: span 1;
+    }
+}
+
+/*----calidad NOSOTROS-----*/
+@media screen and (max-width:950px) {
+    .card-nosotros{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card-nosotros{
+        flex-direction: column;;
     }
 }
 
