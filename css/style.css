@@ -264,7 +264,7 @@ footer h3{
     margin-bottom: 21px;
 }
 
-/*----CONTACTO-----*/
+/*----CONTACTO HMTL-----*/
 .form{
     margin: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -287,16 +287,22 @@ footer h3{
 
 /*----NOSOTROS HTML-----*/
 
-.main-nosotros{
+.main-nosotros h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
     color: #323232;
+    font-weight: 600;
+    font-size: 28px;
     text-align: center;
     padding: 16px 16px 0px 16px;
 }
 
-.main-nosotros h3{
-    font-weight: 600;
+.main-nosotros p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 400;
+    text-align: center;
+    padding: 16px 16px 0px 16px;
 }
 
 .grid-galeria{
@@ -332,6 +338,27 @@ footer h3{
     grid-row: span 2;
 }
 
+/*----SERVICIOS HTML-----*/
+
+.main-servicios h3{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #323232;
+    padding: 6px 12px 6px 12px;
+}
+
+.main-servicios p{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #323232;
+    padding: 6px 12px 6px 12px;
+}
+
+.main-servicios img{
+    width: 95%;
+}
 
 /*----MEDIA QUERYS-----*/
 
@@ -372,7 +399,7 @@ footer h3{
     }
 
 
-/*----galeria-----*/
+/*----galeria NOSOTROS-----*/
 @media screen and (max-width:950px) {
     .grid-galeria{
         grid-template-columns: repeat(2,1fr);
