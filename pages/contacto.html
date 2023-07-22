@@ -44,52 +44,80 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="container-fluid">
-            <form class="form" action="" method="" enctype="">
+    <main>  
+        <section class="form-contacto">
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" >
+                <h3>Queremos escucharte</h3>
             </div>
-           <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
-           </div>
-           <div>
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" name="contrasena" id="contrasena">
-           </div>
-           <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-           </div>
-           <div>
-                <h3>Género</h3>
+            <div class="form.contenedor">
+                <form class="form" action="" method="" enctype="">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" >
+                    </div>
+                   <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                   </div>
+                   <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" name="contrasena" id="contrasena">
+                   </div>
+                   <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                   </div>
+                   <div>
+                        <h4>Género</h4>
+                        <div>
+                            <label for="maculino">Masculino</label>
+                            <input type="radio" name="genero" id="">
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" name="genero">
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="genero">
+                        </div>
+                   </div>
+                   <div>
+                        <select name="" id="">País
+                            <option value="">Argentina</option>
+                            <option value="">Colombia</option>
+                            <option value="">México</option>
+                        </select>
+                   </div>
+                   <div>
+                        <h4>Escríbenos tu consulta</h4>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                   </div>
+                   <div>
+                        <input type="submit">
+                        <input type="reset">
+                   </div>
+                    </form>
+            <div class="d-flex flex-row">
+                <img src="../img/imag-contacto.jpg" alt="">
+            </div>
+            </div>
+        </section>
+        <section class="form-newsletter">
+            <form>
                 <div>
-                    <label for="maculino">Masculino</label>
-                    <input type="radio" name="genero" id="">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero">
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="genero">
+                    <h3>Suscríbete a nuestro Newsletter</h3>
                 </div>
-           </div>
-           <div>
-                <select name="" id="">País
-                    <option value="">Argentina</option>
-                    <option value="">Colombia</option>
-                    <option value="">México</option>
-                </select>
-           </div>
-           <div>
-                <h3>Escríbenos tu consulta</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-           </div>
-           <div>
-                <input type="submit">
-                <input type="reset">
-           </div>
-            </form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"> Tu información está segura con nosotros.</small>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+              </form>
         </section>
     </main>
     <footer id="contacto">
