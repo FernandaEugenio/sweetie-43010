@@ -380,19 +380,20 @@ section{
 
 /*------------------------------------C O N T A C T O-----------------------------------------*/
 
-.titulo-form-contacto{
-    h1{
-        @include typo (Montserrat, 600, left, $color-secundario);
+.titulo-formulario-contacto{
+    div{
+        h1{
+        font-weight: 600;
         font-size: nth($font-size, 4);
-        background-color: aqua;
+        }
     }
 }
 
-.form-contacto{
-    .form-contenedor-contacto{
+.formulario-contacto{
+    .formulario-contenedor-contacto{
         margin: 36px;
         padding: 36px;
-        form{
+        .formulario-contacto-div{
             div{
                 margin-bottom: 8px;
                 padding: 36px;

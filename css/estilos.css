@@ -447,21 +447,17 @@ section h2 {
       .grid-galeria-servicios .grid-item-servicios img:hover {
         scale: 1.1;
         transition: 0.5s; }
-  .grid-galeria-servicios .titulo-form-contacto h1 {
-    font-family: Montserrat;
+  .grid-galeria-servicios .titulo-formulario-contacto div h1 {
     font-weight: 600;
-    text-align: left;
-    color: #ffb7fe;
-    font-size: 26px;
-    background-color: aqua; }
-  .grid-galeria-servicios .form-contacto .form-contenedor-contacto {
+    font-size: 26px; }
+  .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto {
     margin: 36px;
     padding: 36px; }
-    .grid-galeria-servicios .form-contacto .form-contenedor-contacto form div {
+    .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div {
       margin-bottom: 8px;
       padding: 36px;
       margin: 24px; }
-      .grid-galeria-servicios .form-contacto .form-contenedor-contacto form div h4 {
+      .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div h4 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 18px; }
