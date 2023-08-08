@@ -102,14 +102,11 @@ header {
 .hero {
   width: 100%;
   height: calc(100vh - 250px);
-  font-family: 'Montserrat', sans-serif;
   background-image: url(../img/hero_banner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #323232;
-  text-align: center;
   padding: 36px;
   flex-direction: column; }
 
@@ -121,48 +118,55 @@ header {
     margin: 0px;
     width: 100%; } }
   .hero h1 {
-    font-weight: 600;
     border: 2px #323232 solid;
     font-size: 36px;
     padding: 12px;
     margin-bottom: 32px;
-    display: inline-block; }
+    display: inline-block;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color: #323232; }
   .hero p {
     font-size: 16px;
     margin-bottom: 32px;
-    font-weight: 500; }
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    color: #323232; }
   .hero a {
     text-decoration: none;
-    color: #ffffff;
     background-color: #323232;
     font-size: 12px;
     padding: 12px;
     border-radius: 24px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff; }
     .hero a:hover {
       color: #323232;
       background-color: #ffb7fe; }
 
 /*Cards*/
 .producto {
-  font-family: 'Montserrat', sans-serif;
-  color: #ffb7fe;
-  text-align: center;
   background-color: #323232;
   padding-top: 16px; }
   .producto h2 {
+    font-size: 26px;
+    font-family: Montserrat;
     font-weight: 600;
-    font-size: 26px; }
+    text-align: center;
+    color: #ffb7fe; }
   .producto .card {
     flex-wrap: wrap;
     background-color: #323232; }
     .producto .card div {
       width: 250px;
       height: 470px;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      font-size: 18px;
       margin: 20px;
+      text-align: center;
       background-color: #ffffff;
       border-radius: 14px;
       justify-content: center;
@@ -178,7 +182,10 @@ header {
   .producto h3 {
     font-size: 18px;
     padding-bottom: 12px;
-    font-weight: 600; }
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color: #ffb7fe; }
   .producto .boton {
     text-decoration: none;
     color: #ffffff;
@@ -204,39 +211,45 @@ header {
 
 /*Video*/
 .video {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  color: #323232;
   padding-top: 36px;
   padding-bottom: 28px;
   background-image: url(../img/banner-videobck.jpg);
   background-position: center;
   flex-direction: column; }
   .video h2 {
-    font-weight: 600;
     font-size: 26px;
     padding-left: 16px;
-    padding-right: 16px; }
+    padding-right: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color: #323232; }
   .video p {
     font-size: 16px;
     padding-left: 16px;
-    padding-right: 16px; }
+    padding-right: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    color: #323232; }
 
 /*------------------------------------N O S O T R O S-----------------------------------------*/
 .main-nosotros h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #323232;
+  font-family: Montserrat;
   font-weight: 600;
+  text-align: center;
+  color: #323232;
   font-size: 26px;
   text-align: center;
   padding: 16px 16px 0px 16px; }
 
 .main-nosotros p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #323232;
+  font-family: Montserrat;
   font-weight: 400;
   text-align: center;
+  color: #323232;
+  font-size: 16px;
+  color: #323232;
   padding: 8px 16px 0px 16px; }
 
 /*Galeria*/
@@ -267,13 +280,16 @@ header {
 
 /*Cards calidad*/
 .main-nosotros h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
   font-weight: 600;
-  text-align: center; }
+  text-align: center;
+  color: #323232; }
 
 .card-nosotros {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  font-weight: 400;
   text-align: center;
+  color: #323232;
   gap: 40px;
   font-size: 26px; }
   .card-nosotros .card-calidad {
@@ -292,25 +308,28 @@ header {
       justify-content: center;
       margin-top: 10px; }
     .card-nosotros .card-calidad div p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: Montserrat;
       font-weight: 400;
-      font-size: 16px;
-      color: #323232;
       text-align: center;
+      color: #323232;
+      font-size: 16px;
       margin-bottom: 8px; }
 
 /*Newsletter*/
 .form-newsletter {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+  color: #323232;
   padding: 8px;
   margin: 36px;
   background-color: #ffb7fe;
-  font-weight: 400;
-  color: #323232;
   border-radius: 16px; }
   .form-newsletter form div h3 {
+    font-family: Montserrat;
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    color: #323232; }
   .form-newsletter form .form-group {
     padding: 8px;
     text-align: left; }
@@ -326,13 +345,13 @@ header {
 .seccion-producto {
   margin-top: 24px;
   margin-bottom: 24px;
-  font-family: 'Montserrat', sans-serif;
-  color: #323232;
-  text-align: center;
   padding-top: 16px;
   background-color: #ffffff; }
   .seccion-producto h2 {
+    font-family: Montserrat;
     font-weight: 600;
+    text-align: center;
+    color: #323232;
     font-size: 26px; }
   .seccion-producto .card-seccionproducto {
     flex-wrap: wrap;
@@ -340,10 +359,11 @@ header {
     .seccion-producto .card-seccionproducto div {
       width: 250px;
       height: 470px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: Montserrat;
+      font-weight: 400;
       text-align: center;
-      font-size: 18px;
       color: #ffffff;
+      font-size: 18px;
       margin: 20px;
       background-color: #323232;
       border-radius: 14px;
@@ -360,7 +380,10 @@ header {
   .seccion-producto h3 {
     font-size: 18px;
     padding-bottom: 12px;
-    font-weight: 600; }
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff; }
   .seccion-producto .boton-seccionproducto {
     text-decoration: none;
     color: #323232;
@@ -378,17 +401,19 @@ header {
 
 /*------------------------------------S E R V I C I O S-----------------------------------------*/
 .main-servicios div div h1 {
+  font-family: Montserrat;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+  text-align: left;
   color: #323232;
+  font-size: 36px;
   padding: 6px 12px 6px 12px; }
 
 .main-servicios div div p {
+  font-family: Montserrat;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  text-align: left;
   color: #323232;
+  font-size: 16px;
   padding: 6px 12px 6px 12px; }
 
 .main-servicios div div img {
@@ -422,29 +447,33 @@ section h2 {
       .grid-galeria-servicios .grid-item-servicios img:hover {
         scale: 1.1;
         transition: 0.5s; }
-  .grid-galeria-servicios .form-contacto {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    background-color: #eeeeee;
+  .grid-galeria-servicios .titulo-form-contacto h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: left;
+    color: #ffb7fe;
+    font-size: 26px;
+    background-color: aqua; }
+  .grid-galeria-servicios .form-contacto .form-contenedor-contacto {
+    margin: 36px;
     padding: 36px; }
-    .grid-galeria-servicios .form-contacto div {
-      margin-bottom: 8px; }
-    .grid-galeria-servicios .form-contacto h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 36px; }
-    .grid-galeria-servicios .form-contacto h4 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 18px; }
+    .grid-galeria-servicios .form-contacto .form-contenedor-contacto form div {
+      margin-bottom: 8px;
+      padding: 36px;
+      margin: 24px; }
+      .grid-galeria-servicios .form-contacto .form-contenedor-contacto form div h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px; }
   .grid-galeria-servicios .mapa {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px; }
+    padding: 26px; }
+    .grid-galeria-servicios .mapa iframe {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
 
 footer {
   background-color: #323232;
@@ -556,3 +585,22 @@ footer {
 @media screen and (max-width: 750px) {
   .grid-galeria-servicios {
     flex-direction: column; } }
+
+@media screen and (max-width: 750px) {
+  .main-servicios div div h1 {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color: #323232; }
+  .main-servicios div div p {
+    text-align: center; }
+  .main-servicios div div img {
+    width: 85%;
+    height: 85%; } }
+
+@media screen and (max-width: 450px) {
+  .main-servicios div img {
+    width: 70%;
+    height: 70%;
+    align-items: center; } }

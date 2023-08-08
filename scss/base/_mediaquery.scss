@@ -137,3 +137,38 @@
         flex-direction: column;
     }
 }
+
+
+@media screen and (max-width:750px) {
+    .main-servicios{
+        div{
+            div{
+                h1{
+                    font-size: 24px;
+                    @include typo (Montserrat, 600, center, $color-primario)
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        div{
+            img{
+                width: 85%;
+                height: 85%;
+            }
+        }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .main-servicios{
+        div{
+            img{
+                width: 70%;
+                height: 70%;
+                align-items: center;
+            }
+        }
+    }
+}

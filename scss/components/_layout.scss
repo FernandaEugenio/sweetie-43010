@@ -4,14 +4,11 @@
 .hero {
     width: 100%;
     height: calc(100vh - 250px);
-    font-family: 'Montserrat', sans-serif;
     background-image: url(../img/hero_banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: $color-primario;
-    text-align: center;
     padding: 36px;
     flex-direction: column;
     @extend %flex;
@@ -26,44 +23,42 @@
         }
     }
     h1 {
-        font-weight: 600;
         border: 2px $color-primario solid;
         font-size: nth($font-size, 5);
         padding: 12px;
         margin-bottom: 32px;
         display: inline-block;
+        @include typo (Montserrat, 600, center, $color-primario)
     }
     p {
         font-size: nth($font-size, 2);
         margin-bottom: 32px;
-        font-weight: 500;
+        @include typo (Montserrat, 400, center, $color-primario)
     }
     a {
         text-decoration: none;
-        color: $color-terciario;
         background-color: $color-primario;
         font-size: nth($font-size, 1);
         padding: 12px;
         border-radius: 24px;
         transition: 0.5s;
+        @include typo (Montserrat, 400, center, $color-terciario);
         &:hover {
             color: $color-primario;
             background-color: $color-secundario
         }
+        
     }
 }
 
 
 /*Cards*/
 .producto{
-    font-family: 'Montserrat', sans-serif;
-    color: $color-secundario;
-    text-align: center;
     background-color: $color-primario;
     padding-top: 16px;
     h2{
-        font-weight: 600;
         font-size: nth($font-size, 4);
+        @include typo (Montserrat, 600, center, $color-secundario)
     }
     .card{
         @extend %flex;
@@ -72,10 +67,8 @@
         div{
         width: 250px;
         height: 470px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        font-size: nth($font-size, 3);
         margin: 20px;
+        text-align: center;
         background-color: $color-terciario;
         border-radius: 14px;
         justify-content: center;
@@ -95,7 +88,7 @@
         h3{
             font-size: nth($font-size, 3);
             padding-bottom: 12px;
-            font-weight: 600;
+            @include typo (Montserrat, 600, center, $color-secundario)
         }
         .boton{
                 text-decoration: none;
@@ -130,9 +123,6 @@
 
 /*Video*/
 .video {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: $color-primario;
     padding-top: 36px;
     padding-bottom: 28px;
     background-image: url(../img/banner-videobck.jpg);
@@ -140,34 +130,31 @@
     @extend %flex;
     flex-direction: column;
     h2{
-        font-weight: 600;
         font-size: nth($font-size, 4);
         padding-left: 16px;
         padding-right: 16px;
+        @include typo (Montserrat, 600, center, $color-primario)
     }
     p{
         font-size: nth($font-size, 2);
         padding-left: 16px;
         padding-right: 16px;
+        @include typo (Montserrat, 400, center, $color-primario)
     }
 }
 
 /*------------------------------------N O S O T R O S-----------------------------------------*/
 .main-nosotros{
     h1{
-    font-family: 'Montserrat', sans-serif;
-    color: $color-primario;
-    font-weight: 600;
+    @include typo (Montserrat, 600, center, $color-primario);
     font-size: nth($font-size, 4);
     text-align: center;
     padding: 16px 16px 0px 16px;
     }
     p{
-    font-family: 'Montserrat', sans-serif;
+    @include typo (Montserrat, 400, center, $color-primario);
     font-size: nth($font-size, 2);
     color: $color-primario;
-    font-weight: 400;
-    text-align: center;
     padding: 8px 16px 0px 16px;
     }
 }
@@ -210,16 +197,13 @@
 /*Cards calidad*/
 .main-nosotros{
     h2{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        text-align: center;
+        @include typo (Montserrat, 600, center, $color-primario);
     }
 }
 
 .card-nosotros{
-    font-family: 'Montserrat', sans-serif;
+    @include typo (Montserrat, 400, center, $color-primario);
     @extend %flex;
-    text-align: center;
     gap: 40px;
     font-size: nth($font-size, 4);
     .card-calidad{
@@ -240,11 +224,8 @@
         }
         div{
             p{
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
+                @include typo (Montserrat, 400, center, $color-primario);
                 font-size: nth($font-size, 2);
-                color: $color-primario;
-                text-align: center;
                 margin-bottom: 8px;
             }
         }
@@ -253,18 +234,15 @@
 
 /*Newsletter*/
 .form-newsletter{
-    font-family: 'Montserrat', sans-serif;
+    @include typo (Montserrat, 400, center, $color-primario);
     padding: 8px;
     margin: 36px;
     background-color: $color-secundario;
-    font-weight: 400;
-    color: $color-primario;
     border-radius: 16px;
     form{
         div{
             h3{
-                font-weight: 600;
-                text-align: center;
+                @include typo (Montserrat, 600, center, $color-primario);
             }
         }
         .form-group{
@@ -287,13 +265,10 @@
 .seccion-producto{
     margin-top: 24px;
     margin-bottom: 24px;
-    font-family: 'Montserrat', sans-serif;
-    color: $color-primario;
-    text-align: center;
     padding-top: 16px;
     background-color: $color-terciario;
     h2{
-        font-weight: 600;
+        @include typo (Montserrat, 600, center, $color-primario);
         font-size: nth($font-size, 4);
     }
     .card-seccionproducto{
@@ -303,10 +278,8 @@
         div{
         width: 250px;
         height: 470px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
+        @include typo (Montserrat, 400, center, $color-terciario);
         font-size: nth($font-size, 3);
-        color: $color-terciario;
         margin: 20px;
         background-color: $color-primario;
         border-radius: 14px;
@@ -327,7 +300,7 @@
         h3{
             font-size: nth($font-size, 3);
             padding-bottom: 12px;
-            font-weight: 600;
+            @include typo (Montserrat, 600, center, $color-terciario);
         }
         .boton-seccionproducto{
                 text-decoration: none;
@@ -356,17 +329,13 @@
     div{
         div{
             h1{
-                font-weight: 600;
-                font-family: 'Montserrat', sans-serif;
+                @include typo (Montserrat, 600, left, $color-primario);
                 font-size: nth($font-size, 5);
-                color: $color-primario;
                 padding: 6px 12px 6px 12px;
             }
             p{
-                font-weight: 400;
-                font-family: 'Montserrat', sans-serif;
+                @include typo (Montserrat, 400, left, $color-primario);
                 font-size: nth($font-size, 2);
-                color: $color-primario;
                 padding: 6px 12px 6px 12px;
             }
         }
@@ -410,33 +379,43 @@ section{
 }
 
 /*------------------------------------C O N T A C T O-----------------------------------------*/
-.form-contacto{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    background-color: #eeeeee;
-    padding: 36px;
-    div{
-        margin-bottom: 8px;
-    }
+
+.titulo-form-contacto{
     h1{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: nth($font-size, 5);
-    }
-    h4{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: nth($font-size, 3);
+        @include typo (Montserrat, 600, left, $color-secundario);
+        font-size: nth($font-size, 4);
+        background-color: aqua;
     }
 }
 
+.form-contacto{
+    .form-contenedor-contacto{
+        margin: 36px;
+        padding: 36px;
+        form{
+            div{
+                margin-bottom: 8px;
+                padding: 36px;
+                margin: 24px;
+                h4{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: nth($font-size, 3);
+                }
+            }
+        }
+    }
+}
+
+
 .mapa{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
+    padding: 26px;  
+    iframe{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  }
     }
 }
