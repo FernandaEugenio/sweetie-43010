@@ -1,0 +1,28 @@
+$color-primario: #323232;
+$color-secundario: #ffb7fe;
+$color-terciario: #ffffff;
+
+$paleta-colores: 
+#323232,
+#ffb7fe,
+#ffffff;
+
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin typo ($family, $weight, $align, $color){
+    font-family: $family;
+    font-weight: $weight;
+    text-align: $align;
+    color: $color;
+}
+
+$font-size:
+12px,
+16px, 
+18px, 
+26px,
+36px,

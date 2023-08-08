@@ -2,19 +2,21 @@
 
 /*----RESET-----*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*----HEADER-----*/
 
-header{
+header {
     background-color: #323232;
     padding: 8px 16px 16px 16px;
-    /*position: sticky;
-    top: 0;*/
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,59 +24,59 @@ header{
     z-index: 10px;
 }
 
-header nav ul li a{
+header nav ul li a {
     font-family: 'Montserrat', sans-serif;
     list-style: none;
-    text-decoration:none;
+    text-decoration: none;
     color: #ffffff;
     display: flex;
     margin: 8px;
 }
 
-header nav ul{
+header nav ul {
     margin: 8px;
     display: flex;
     text-decoration: none;
     list-style: none;
 }
 
-header nav ul li a:hover{
-    color:#ffb7fe;
-}
-
-/*----MAIN Class-----*/
-.brand{
-    color:#ffb7fe;
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    text-align:left;
-    text-decoration: none;
-}
-
-.brand:hover{
-    color: #ffffff;
-}
-
-.navbar{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-}
-
-.navbar:hover{
+header nav ul li a:hover {
     color: #ffb7fe;
 }
 
-.navbar-light{
+/*----MAIN Class-----*/
+.brand {
+    color: #ffb7fe;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    text-decoration: none;
+}
+
+.brand:hover {
+    color: #ffffff;
+}
+
+.navbar {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
 
-.navbar-light .navbar-toggler-icon{
+.navbar:hover {
+    color: #ffb7fe;
+}
+
+.navbar-light {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-toggler-icon {
     background-image: url(../img/hamburgesa_icono.png) !important;
 }
 
-.boton-nav{
+.boton-nav {
     background-color: #ffb7fe;
     border: #ffb7fe;
     color: #323232;
@@ -85,19 +87,19 @@ header nav ul li a:hover{
     width: 128px;
 }
 
-.boton-nav:hover{
+.boton-nav:hover {
     background-color: #ffffff;
 }
 
-.hero{
+.hero {
     width: 100%;
     height: calc(100vh - 250px);
     font-family: 'Montserrat', sans-serif;
-    background-image: url(../img/hero_banner.jpg) ;
+    background-image: url(../img/hero_banner.jpg);
     background-position: center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #323232;
     text-align: center;
     padding: 36px;
@@ -107,7 +109,7 @@ header nav ul li a:hover{
     align-items: center;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 48px;
     border: 2px #323232 solid;
     padding: 12px;
@@ -117,13 +119,13 @@ header nav ul li a:hover{
     font-weight: 600;
 }
 
-.hero p{
+.hero p {
     font-size: 19px;
     margin-bottom: 32px;
     font-weight: 400;
 }
 
-.hero a{
+.hero a {
     text-decoration: none;
     color: white;
     background-color: #323232;
@@ -132,32 +134,32 @@ header nav ul li a:hover{
     border-radius: 24px;
 }
 
-.hero a:hover{
+.hero a:hover {
     color: #323232;
     background-color: #ffb7fe;
 }
 
-.producto h2{
+.producto h2 {
     font-weight: 600;
 }
 
-.producto div h3{
+.producto div h3 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 18px;
 }
 
-.producto{
+.producto {
     font-family: 'Montserrat', sans-serif;
-    color:#ffb7fe;
+    color: #ffb7fe;
     text-align: center;
     font-size: 18px;
     background-color: #323232;
     padding-top: 16px;
 }
 
-.producto .card{
+.producto .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +167,7 @@ header nav ul li a:hover{
     background-color: #323232;
 }
 
-.producto .card div{
+.producto .card div {
     width: 250px;
     height: 475px;
     font-family: 'Montserrat', sans-serif;
@@ -176,25 +178,24 @@ header nav ul li a:hover{
     border-radius: 14px;
 }
 
-.producto .card div:hover{
-}
+.producto .card div:hover
 
-.producto div img{
+.producto div img {
     width: 250px;
     height: 375px;
     padding: 16px;
 }
 
-.card div a:hover{
+.card div a:hover {
     background-color: #ffb7fe;
     color: #323232;
 }
 
-.cards h3{
+.cards h3 {
     padding-top: 12px;
 }
 
-.boton{
+.boton {
     text-decoration: none;
     color: white;
     background-color: #323232;
@@ -203,12 +204,12 @@ header nav ul li a:hover{
     border-radius: 24px;
 }
 
-.boton:active{
+.boton:active {
     background-color: #ffb7fe;
     color: #323232;
 }
 
-.video{
+.video {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -223,19 +224,19 @@ header nav ul li a:hover{
     flex-direction: column;
 }
 
-.video h2{
+.video h2 {
     font-weight: 600;
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.video p{
+.video p {
     padding-left: 16px;
     padding-right: 16px;
 }
 
 /*----WA-----*/
-.position{
+.position {
     position: fixed;
     bottom: 100px;
     right: 50px;
@@ -246,7 +247,7 @@ header nav ul li a:hover{
 }
 
 /*----FOOTER-----*/
-footer{
+footer {
     background-color: #323232;
     color: white;
     padding: 24px;
@@ -256,11 +257,11 @@ footer{
     flex-direction: column;
 }
 
-footer div a img{
+footer div a img {
     margin: 8px;
 }
 
-footer h3{
+footer h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -269,29 +270,30 @@ footer h3{
 }
 
 /*----CONTACTO HMTL-----*/
-.form-contacto{
+.form-contacto {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     background-color: #eeeeee;
     padding: 36px;
 }
 
-.form-contacto div{
+.form-contacto div {
     margin-bottom: 8px;
 }
-.form-contacto h3{
+
+.form-contacto h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 28px;
 }
 
-.form-contacto h4{
+.form-contacto h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
 
-.mapa{
+.mapa {
     width: 100%;
     height: 100%;
     display: flex;
@@ -304,7 +306,7 @@ footer h3{
 
 /*----NOSOTROS HTML-----*/
 
-.main-nosotros h3{
+.main-nosotros h3 {
     font-family: 'Montserrat', sans-serif;
     color: #323232;
     font-weight: 600;
@@ -313,7 +315,7 @@ footer h3{
     padding: 16px 16px 0px 16px;
 }
 
-.main-nosotros p{
+.main-nosotros p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #323232;
@@ -323,7 +325,7 @@ footer h3{
 }
 
 /*----galeria NOSOTROS-----*/
-.grid-galeria{
+.grid-galeria {
     margin-top: 20px;
     width: 100%;
     display: grid;
@@ -333,32 +335,32 @@ footer h3{
     margin-bottom: 20px;
 }
 
-.grid-galeria div img{
+.grid-galeria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.grid-item{
+.grid-item {
     box-shadow: 4px 4px 16px 2px rgb(187, 187, 187);
-    position:relative;
+    position: relative;
 }
 
-.img-4{
+.img-4 {
     grid-column: span 2;
 }
 
-.img-6{
+.img-6 {
     grid-row: span 2;
 }
 
-.img-8{
+.img-8 {
     grid-row: span 2;
 }
 
 /*----calidad NOSOTROS-----*/
 
-.card-nosotros{
+.card-nosotros {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
@@ -367,7 +369,7 @@ footer h3{
     gap: 40px;
 }
 
-.card-nosotros h3{
+.card-nosotros h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 28px;
@@ -376,14 +378,14 @@ footer h3{
     margin-bottom: 8px;
 }
 
-img.card-img-top{
+img.card-img-top {
     width: 72px;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
 
-div.card-calidad{
+div.card-calidad {
     justify-items: center;
     align-content: center;
     background-color: #ffffff;
@@ -397,7 +399,7 @@ div.card-calidad{
 
 /*----form NOSOTROS-----*/
 
-.form-newsletter{
+.form-newsletter {
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
     margin: 36px;
@@ -407,16 +409,16 @@ div.card-calidad{
     border-radius: 16px;
 }
 
-.form-newsletter h3{
+.form-newsletter h3 {
     font-weight: 600;
     text-align: center;
 }
 
-.form-group{
+.form-group {
     padding: 4px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #323232 !important;
     color: #ffffff;
     border-radius: 12px !important;
@@ -425,7 +427,7 @@ div.card-calidad{
 
 /*----SERVICIOS HTML-----*/
 
-.main-servicios h3{
+.main-servicios h3 {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
@@ -433,7 +435,7 @@ div.card-calidad{
     padding: 6px 12px 6px 12px;
 }
 
-.main-servicios p{
+.main-servicios p {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -441,70 +443,71 @@ div.card-calidad{
     padding: 6px 12px 6px 12px;
 }
 
-.main-servicios img{
+.main-servicios img {
     width: 95%;
 }
 
 /*----MEDIA QUERYS-----*/
 
 /*----Header-----*/
-@media screen and (max-width:600px){
-    header{
-            flex-direction: column;
-            font-size:  16px;
+@media screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width:640px){
-    header{
+@media screen and (max-width:640px) {
+    header {
         position: static
     }
-    
-    .position{
+
+    .position {
         display: none;
     }
 }
 
-@media screen and (max-width:450px){
-    header{
-            flex-direction: column;
-            font-size:  12px;
+@media screen and (max-width:450px) {
+    header {
+        flex-direction: column;
+        font-size: 12px;
     }
 }
 
 
 /*----hero section-----*/
-@media screen and (max-width: 720px){
-    .hero h2{
+@media screen and (max-width: 720px) {
+    .hero h2 {
         font-size: 28px;
     }
-    .hero p{
+
+    .hero p {
         font-size: 16px;
-    }   
     }
+}
 
 /*----galeria NOSOTROS-----*/
 @media screen and (max-width:950px) {
-    .grid-galeria{
-        grid-template-columns: repeat(2,1fr);
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .grid-item{
+
+    .grid-item {
         grid-column: span 1;
         grid-row: span 1;
     }
 
-    .img-9{
+    .img-9 {
         grid-column: span 2;
     }
 }
 
 @media screen and (max-width:450px) {
-    .grid-galeria{
+    .grid-galeria {
         grid-template-columns: 1fr;
     }
 
-    .grid-item{
+    .grid-item {
         grid-column: span 1;
         grid-column: span 1;
     }
@@ -512,23 +515,25 @@ div.card-calidad{
 
 /*----calidad NOSOTROS-----*/
 @media screen and (max-width:950px) {
-    .card-nosotros{
+    .card-nosotros {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width:450px) {
-    .card-nosotros{
-        flex-direction: column;;
+    .card-nosotros {
+        flex-direction: column;
+        ;
     }
 }
 
 /*----video INDEX-----*/
 @media screen and (max-width:600px) {
-    .video{
+    .video {
         font-size: 16px;
     }
 
     iframe{
         width: 300px;
     }
+}

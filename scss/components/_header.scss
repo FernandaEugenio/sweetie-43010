@@ -1,0 +1,87 @@
+header{
+    background-color: $color-primario;
+    padding: 8px 16px 16px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10px;
+    .navbar{
+        font-family: 'Montserrat', sans-serif;
+        color: $color-terciario;
+        background-color: $color-primario;
+        padding: 8px 16px 16px 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10px;
+        &:hover{
+            color: $color-secundario
+        }
+        .container-fluid{
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            .brand{
+                color: $color-secundario;
+                font-size: 36px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                text-align: left;
+                text-decoration: none;
+                &:hover{
+                color: $color-terciario;
+                transition: 0.5s;
+                }
+            }
+            .navbar-toggler{
+                .navbar-toggler-icon{
+                    background-image: url(../img/hamburgesa_icono.png) !important;
+                }
+            }
+            div{
+                ul{
+                    margin: 8px;
+                    display: flex;
+                    text-decoration: none;
+                    list-style: none;
+                    align-items: center;
+                    li{
+                        a{
+                            font-family: 'Montserrat', sans-serif;
+                            list-style: none;
+                            text-decoration: none;
+                            color: $color-terciario;
+                            display: flex;
+                            margin: 8px;
+                            &:hover{
+                                color: $color-secundario;
+                                transition: 0.5s;
+                                }
+                        }
+                    }
+                }
+                form{
+                    .form-control{
+                        background-color: $color-terciario;
+                    }
+                    .boton-nav{
+                        background-color: #ffb7fe;
+                        border: #ffb7fe;
+                        color: #323232;
+                        border-radius: 16px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 12px;
+                        font-weight: 400px;
+                        width: 128px;
+                        &:hover{
+                            background-color: #ffffff;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&display=swap");
+/*----RESET-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.boton {
+  text-decoration: none;
+  color: white;
+  background-color: #323232;
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 24px; }
+  .boton:active {
+    background-color: #ffb7fe;
+    color: #323232; }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232; }
+
+.hero, .producto .card, .video, .card-nosotros, .seccion-producto .card-seccionproducto {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+header {
+  background-color: #323232;
+  padding: 8px 16px 16px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10px; }
+  header .navbar {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #323232;
+    padding: 8px 16px 16px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10px; }
+    header .navbar:hover {
+      color: #ffb7fe; }
+    header .navbar .container-fluid {
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex; }
+      header .navbar .container-fluid .brand {
+        color: #ffb7fe;
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: left;
+        text-decoration: none; }
+        header .navbar .container-fluid .brand:hover {
+          color: #ffffff;
+          transition: 0.5s; }
+      header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+        background-image: url(../img/hamburgesa_icono.png) !important; }
+      header .navbar .container-fluid div ul {
+        margin: 8px;
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        align-items: center; }
+        header .navbar .container-fluid div ul li a {
+          font-family: 'Montserrat', sans-serif;
+          list-style: none;
+          text-decoration: none;
+          color: #ffffff;
+          display: flex;
+          margin: 8px; }
+          header .navbar .container-fluid div ul li a:hover {
+            color: #ffb7fe;
+            transition: 0.5s; }
+      header .navbar .container-fluid div form .form-control {
+        background-color: #ffffff; }
+      header .navbar .container-fluid div form .boton-nav {
+        background-color: #ffb7fe;
+        border: #ffb7fe;
+        color: #323232;
+        border-radius: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 400px;
+        width: 128px; }
+        header .navbar .container-fluid div form .boton-nav:hover {
+          background-color: #ffffff;
+          transition: 0.5s; }
+
+/*------------------------------------I N D E X-----------------------------------------*/
+/*Hero section*/
+.hero {
+  width: 100%;
+  height: calc(100vh - 250px);
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/hero_banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #323232;
+  text-align: center;
+  padding: 36px;
+  flex-direction: column; }
+
+@keyframes slidein {
+  from {
+    margin-top: 50%;
+    width: 100%; }
+  to {
+    margin: 0px;
+    width: 100%; } }
+  .hero h1 {
+    font-weight: 600;
+    border: 2px #323232 solid;
+    font-size: 36px;
+    padding: 12px;
+    margin-bottom: 32px;
+    display: inline-block; }
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: 500; }
+  .hero a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #323232;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 24px;
+    transition: 0.5s; }
+    .hero a:hover {
+      color: #323232;
+      background-color: #ffb7fe; }
+
+/*Cards*/
+.producto {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffb7fe;
+  text-align: center;
+  background-color: #323232;
+  padding-top: 16px; }
+  .producto h2 {
+    font-weight: 600;
+    font-size: 26px; }
+  .producto .card {
+    flex-wrap: wrap;
+    background-color: #323232; }
+    .producto .card div {
+      width: 250px;
+      height: 470px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 18px;
+      margin: 20px;
+      background-color: #ffffff;
+      border-radius: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: 0.3s; }
+      .producto .card div:hover {
+        transform: scale(1.1); }
+  .producto img {
+    width: 250px;
+    height: 375px;
+    padding: 16px; }
+  .producto h3 {
+    font-size: 18px;
+    padding-bottom: 12px;
+    font-weight: 600; }
+  .producto .boton {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #323232;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 24px; }
+    .producto .boton:hover {
+      color: #323232;
+      background-color: #ffb7fe;
+      transition: 0.5s; }
+    .producto .boton:active {
+      background-color: #ffb7fe;
+      color: #323232; }
+
+/*WA*/
+.position {
+  position: fixed;
+  bottom: 100px;
+  right: 50px; }
+  .position img {
+    width: 60px; }
+
+/*Video*/
+.video {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #323232;
+  padding-top: 36px;
+  padding-bottom: 28px;
+  background-image: url(../img/banner-videobck.jpg);
+  background-position: center;
+  flex-direction: column; }
+  .video h2 {
+    font-weight: 600;
+    font-size: 26px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  .video p {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px; }
+
+/*------------------------------------N O S O T R O S-----------------------------------------*/
+.main-nosotros h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #323232;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  padding: 16px 16px 0px 16px; }
+
+.main-nosotros p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #323232;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 16px 0px 16px; }
+
+/*Galeria*/
+.grid-galeria {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 170px;
+  gap: 16px;
+  margin-bottom: 20px; }
+  .grid-galeria .grid-item {
+    box-shadow: 4px 4px 16px 2px #bbbbbb;
+    position: relative; }
+    .grid-galeria .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      .grid-galeria .grid-item img:hover {
+        scale: 1.1;
+        transition: 0.5s; }
+    .grid-galeria .grid-item .img-4 {
+      grid-column: span 2; }
+    .grid-galeria .grid-item .img-6 {
+      grid-row: span 2; }
+    .grid-galeria .grid-item .img-8 {
+      grid-row: span 2; }
+
+/*Cards calidad*/
+.main-nosotros h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center; }
+
+.card-nosotros {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  gap: 40px;
+  font-size: 26px; }
+  .card-nosotros .card-calidad {
+    justify-items: center;
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 2px #323232 solid !important;
+    border-style: none;
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 4px; }
+    .card-nosotros .card-calidad img {
+      width: 72px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px; }
+    .card-nosotros .card-calidad div p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #323232;
+      text-align: center;
+      margin-bottom: 8px; }
+
+/*Newsletter*/
+.form-newsletter {
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px;
+  margin: 36px;
+  background-color: #ffb7fe;
+  font-weight: 400;
+  color: #323232;
+  border-radius: 16px; }
+  .form-newsletter form div h3 {
+    font-weight: 600;
+    text-align: center; }
+  .form-newsletter form .form-group {
+    padding: 8px;
+    text-align: left; }
+    .form-newsletter form .form-group label {
+      font-size: 18px; }
+  .form-newsletter form .btn-primary {
+    background-color: #323232;
+    color: #ffffff;
+    border-radius: 12px;
+    border-color: #323232; }
+
+/*------------------------------------P R O D U C T O S-----------------------------------------*/
+.seccion-producto {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #323232;
+  text-align: center;
+  padding-top: 16px;
+  background-color: #ffffff; }
+  .seccion-producto h2 {
+    font-weight: 600;
+    font-size: 26px; }
+  .seccion-producto .card-seccionproducto {
+    flex-wrap: wrap;
+    background-color: #ffffff; }
+    .seccion-producto .card-seccionproducto div {
+      width: 250px;
+      height: 470px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      margin: 20px;
+      background-color: #323232;
+      border-radius: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: 0.3s; }
+      .seccion-producto .card-seccionproducto div:hover {
+        transform: scale(1.1); }
+  .seccion-producto img {
+    width: 250px;
+    height: 375px;
+    padding: 16px; }
+  .seccion-producto h3 {
+    font-size: 18px;
+    padding-bottom: 12px;
+    font-weight: 600; }
+  .seccion-producto .boton-seccionproducto {
+    text-decoration: none;
+    color: #323232;
+    background-color: #ffb7fe;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 24px; }
+    .seccion-producto .boton-seccionproducto:hover {
+      color: #323232;
+      background-color: #ffffff;
+      transition: 0.5s; }
+    .seccion-producto .boton-seccionproducto:active {
+      background-color: #ffb7fe;
+      color: #323232; }
+
+/*------------------------------------S E R V I C I O S-----------------------------------------*/
+.main-servicios div div h1 {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #323232;
+  padding: 6px 12px 6px 12px; }
+
+.main-servicios div div p {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #323232;
+  padding: 6px 12px 6px 12px; }
+
+.main-servicios div div img {
+  width: 100%; }
+
+section h2 {
+  font-size: 26px;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  color: #ffb7fe; }
+
+.grid-galeria-servicios {
+  margin-bottom: 20px;
+  display: grid;
+  grid-auto-rows: 170px;
+  gap: 16px;
+  background-color: #ffb7fe;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  /*------------------------------------C O N T A C T O-----------------------------------------*/ }
+  .grid-galeria-servicios .grid-item-servicios {
+    position: relative; }
+    .grid-galeria-servicios .grid-item-servicios img {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 4px 4px 16px 2px #acacac; }
+      .grid-galeria-servicios .grid-item-servicios img:hover {
+        scale: 1.1;
+        transition: 0.5s; }
+  .grid-galeria-servicios .form-contacto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #eeeeee;
+    padding: 36px; }
+    .grid-galeria-servicios .form-contacto div {
+      margin-bottom: 8px; }
+    .grid-galeria-servicios .form-contacto h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 36px; }
+    .grid-galeria-servicios .form-contacto h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 18px; }
+  .grid-galeria-servicios .mapa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px; }
+
+footer {
+  background-color: #323232;
+  color: #ffffff;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 21px; }
+  footer div {
+    transition: 2s; }
+    footer div a {
+      margin: 8px; }
+      footer div a :hover {
+        transform: scale(1.3);
+        transition: 0.5s; }
+
+/*----Header-----*/
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    font-size: 16px; } }
+
+@media screen and (max-width: 640px) {
+  header {
+    position: static; }
+  .position {
+    display: none; } }
+
+@media screen and (max-width: 450px) {
+  header {
+    flex-direction: column;
+    font-size: 12px; } }
+
+/*----hero section-----*/
+@media screen and (max-width: 720px) {
+  .hero h1 {
+    font-size: 24px; }
+  .hero p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 720px) {
+  .producto h2 {
+    font-size: 21px; } }
+
+@media screen and (max-width: 720px) {
+  .video div h2 {
+    font-size: 21px;
+    margin-top: 16px; }
+  .video div p {
+    font-size: 16px; } }
+
+/*----galeria NOSOTROS-----*/
+@media screen and (max-width: 950px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    .grid-galeria .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .grid-galeria .img-9 {
+      grid-column: span 2; } }
+
+@media screen and (max-width: 450px) {
+  .grid-galeria {
+    grid-template-columns: repeat(1, 1fr); }
+    .grid-galeria .grid-item {
+      grid-column: span 1;
+      grid-column: span 1; } }
+
+/*----card INDEX-----*/
+@media screen and (max-width: 950px) {
+  .producto {
+    flex-direction: column; } }
+
+@media screen and (max-width: 450px) {
+  .producto {
+    flex-direction: column; } }
+
+/*----calidad NOSOTROS-----*/
+@media screen and (max-width: 950px) {
+  .main-nosotros h2 {
+    font-size: 24px; } }
+
+@media screen and (max-width: 950px) {
+  .card-nosotros {
+    flex-direction: column; }
+    .card-nosotros .card-calidad {
+      width: 85%; } }
+
+@media screen and (max-width: 450px) {
+  .card-nosotros {
+    flex-direction: column; } }
+
+/*----video INDEX-----*/
+@media screen and (max-width: 600px) {
+  .video {
+    font-size: 16px; }
+  iframe {
+    width: 300px; } }
+
+/*-----------------------S E R V I C I OS-----------------------*/
+/*----grid galeria SERVICIOS-----*/
+@media screen and (max-width: 750px) {
+  .grid-galeria-servicios {
+    flex-direction: column; } }

@@ -1,0 +1,139 @@
+/*----Header-----*/
+@media screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        position: static
+    }
+
+    .position {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    header {
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
+
+
+/*----hero section-----*/
+@media screen and (max-width: 720px) {
+    .hero{
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .producto{
+        h2{
+            font-size: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .video{
+        div{
+            h2{
+                font-size: 21px;
+                margin-top: 16px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/*----galeria NOSOTROS-----*/
+@media screen and (max-width:950px) {
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        .grid-item{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-9{
+            grid-column: span 2;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        .grid-item{
+            grid-column: span 1;
+            grid-column: span 1;
+        }
+    }
+}
+
+/*----card INDEX-----*/
+@media screen and (max-width:950px) {
+    .producto{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .producto{
+        flex-direction: column;
+    }
+}
+
+/*----calidad NOSOTROS-----*/
+@media screen and (max-width:950px) {
+    .main-nosotros{
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .card-nosotros {
+        flex-direction: column;
+        .card-calidad{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card-nosotros {
+        flex-direction: column;
+        ;
+    }
+}
+
+/*----video INDEX-----*/
+@media screen and (max-width:600px) {
+    .video {
+        font-size: 16px;
+    }
+    iframe {
+        width: 300px;
+    }
+}
+
+/*-----------------------S E R V I C I OS-----------------------*/
+/*----grid galeria SERVICIOS-----*/
+@media screen and (max-width:750px) {
+    .grid-galeria-servicios {
+        flex-direction: column;
+    }
+}
