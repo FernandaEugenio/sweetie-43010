@@ -434,8 +434,7 @@ section h2 {
   background-color: #ffb7fe;
   align-items: center;
   justify-content: center;
-  padding: 24px;
-  /*------------------------------------C O N T A C T O-----------------------------------------*/ }
+  padding: 24px; }
   .grid-galeria-servicios .grid-item-servicios {
     position: relative; }
     .grid-galeria-servicios .grid-item-servicios img {
@@ -447,29 +446,40 @@ section h2 {
       .grid-galeria-servicios .grid-item-servicios img:hover {
         scale: 1.1;
         transition: 0.5s; }
-  .grid-galeria-servicios .titulo-formulario-contacto div h1 {
-    font-weight: 600;
-    font-size: 26px; }
-  .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto {
-    margin: 36px;
-    padding: 36px; }
-    .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div {
-      margin-bottom: 8px;
-      padding: 36px;
-      margin: 24px; }
-      .grid-galeria-servicios .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 18px; }
-  .grid-galeria-servicios .mapa {
-    padding: 26px; }
-    .grid-galeria-servicios .mapa iframe {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
+
+/*------------------------------------C O N T A C T O-----------------------------------------*/
+.main-contacto div h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  color: #323232;
+  font-size: 36px;
+  margin: 16px; }
+
+.formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div {
+  background-color: #dedede;
+  align-content: center; }
+  .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div {
+    margin-left: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+    padding: 8px; }
+    .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div input {
+      text-align: justify; }
+    .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 18px; }
+
+.mapa {
+  padding: 26px; }
+  .mapa iframe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
 
 footer {
   background-color: #323232;
