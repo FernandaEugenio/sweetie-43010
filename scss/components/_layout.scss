@@ -12,16 +12,19 @@
     padding: 36px;
     flex-direction: column;
     @extend %flex;
+
     @keyframes slidein {
-        from{
+        from {
             margin-top: 50%;
             width: 100%;
         }
-        to{
+
+        to {
             margin: 0px;
-            width:100%;
+            width: 100%;
         }
     }
+
     h1 {
         border: 2px $color-primario solid;
         font-size: nth($font-size, 5);
@@ -30,11 +33,13 @@
         display: inline-block;
         @include typo (Montserrat, 600, center, $color-primario)
     }
+
     p {
         font-size: nth($font-size, 2);
         margin-bottom: 32px;
         @include typo (Montserrat, 400, center, $color-primario)
     }
+
     a {
         text-decoration: none;
         background-color: $color-primario;
@@ -43,71 +48,81 @@
         border-radius: 24px;
         transition: 0.5s;
         @include typo (Montserrat, 400, center, $color-terciario);
+
         &:hover {
             color: $color-primario;
             background-color: $color-secundario
         }
-        
+
     }
 }
 
 
 /*Cards*/
-.producto{
+.producto {
     background-color: $color-primario;
     padding-top: 16px;
-    h2{
+
+    h2 {
         font-size: nth($font-size, 4);
         @include typo (Montserrat, 600, center, $color-secundario)
     }
-    .card{
+
+    .card {
         @extend %flex;
         flex-wrap: wrap;
         background-color: $color-primario;
-        div{
-        width: 250px;
-        height: 470px;
-        margin: 20px;
-        text-align: center;
-        background-color: $color-terciario;
-        border-radius: 14px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        transition: 0.3s;
-        &:hover{
-            transform:scale(1.1);
-        }
-        }
-        }
-        img{
+
+        div {
             width: 250px;
-            height: 375px;
-            padding: 16px;
-        }
-        h3{
-            font-size: nth($font-size, 3);
-            padding-bottom: 12px;
-            @include typo (Montserrat, 600, center, $color-secundario)
-        }
-        .boton{
-                text-decoration: none;
-                color: $color-terciario;
-                background-color: $color-primario;
-                font-size: nth($font-size, 1);
-                padding: 12px;
-                border-radius: 24px;
-                &:hover {
-                    color: $color-primario;
-                    background-color: $color-secundario;
-                    transition: 0.5s;
-                }
-                &:active{
-                    background-color: $color-secundario;
-                    color: $color-primario;
-                }
+            height: 470px;
+            margin: 20px;
+            text-align: center;
+            background-color: $color-terciario;
+            border-radius: 14px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
             }
         }
+    }
+
+    img {
+        width: 250px;
+        height: 375px;
+        padding: 16px;
+    }
+
+    h3 {
+        font-size: nth($font-size, 3);
+        padding-bottom: 12px;
+        @include typo (Montserrat, 600, center, $color-secundario)
+    }
+
+    .boton {
+        text-decoration: none;
+        color: $color-terciario;
+        background-color: $color-primario;
+        font-size: nth($font-size, 1);
+        padding: 12px;
+        border-radius: 24px;
+
+        &:hover {
+            color: $color-primario;
+            background-color: $color-secundario;
+            transition: 0.5s;
+        }
+
+        &:active {
+            background-color: $color-secundario;
+            color: $color-primario;
+        }
+    }
+}
 
 
 
@@ -116,8 +131,9 @@
     position: fixed;
     bottom: 100px;
     right: 50px;
-    img{
-        width: 60px; 
+
+    img {
+        width: 60px;
     }
 }
 
@@ -129,13 +145,15 @@
     background-position: center;
     @extend %flex;
     flex-direction: column;
-    h2{
+
+    h2 {
         font-size: nth($font-size, 4);
         padding-left: 16px;
         padding-right: 16px;
         @include typo (Montserrat, 600, center, $color-primario)
     }
-    p{
+
+    p {
         font-size: nth($font-size, 2);
         padding-left: 16px;
         padding-right: 16px;
@@ -144,23 +162,24 @@
 }
 
 /*------------------------------------N O S O T R O S-----------------------------------------*/
-.main-nosotros{
-    h1{
-    @include typo (Montserrat, 600, center, $color-primario);
-    font-size: nth($font-size, 4);
-    text-align: center;
-    padding: 16px 16px 0px 16px;
+.main-nosotros {
+    h1 {
+        @include typo (Montserrat, 600, center, $color-primario);
+        font-size: nth($font-size, 4);
+        text-align: center;
+        padding: 16px 16px 0px 16px;
     }
-    p{
-    @include typo (Montserrat, 400, center, $color-primario);
-    font-size: nth($font-size, 2);
-    color: $color-primario;
-    padding: 8px 16px 0px 16px;
+
+    p {
+        @include typo (Montserrat, 400, center, $color-primario);
+        font-size: nth($font-size, 2);
+        color: $color-primario;
+        padding: 8px 16px 0px 16px;
     }
 }
 
 /*Galeria*/
-.grid-galeria{
+.grid-galeria {
     margin-top: 20px;
     width: 100%;
     display: grid;
@@ -168,26 +187,30 @@
     grid-auto-rows: 170px;
     gap: 16px;
     margin-bottom: 20px;
-    .grid-item{
+
+    .grid-item {
         box-shadow: 4px 4px 16px 2px rgb(187, 187, 187);
         position: relative;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            &:hover{
+
+            &:hover {
                 scale: 1.1;
                 transition: 0.5s;
             }
         }
+
         .img-4 {
             grid-column: span 2;
         }
-        
+
         .img-6 {
             grid-row: span 2;
         }
-        
+
         .img-8 {
             grid-row: span 2;
         }
@@ -195,18 +218,19 @@
 }
 
 /*Cards calidad*/
-.main-nosotros{
-    h2{
+.main-nosotros {
+    h2 {
         @include typo (Montserrat, 600, center, $color-primario);
     }
 }
 
-.card-nosotros{
+.card-nosotros {
     @include typo (Montserrat, 400, center, $color-primario);
     @extend %flex;
     gap: 40px;
     font-size: nth($font-size, 4);
-    .card-calidad{
+
+    .card-calidad {
         justify-items: center;
         align-content: center;
         background-color: $color-terciario;
@@ -216,14 +240,16 @@
         width: 400px;
         padding: 8px;
         margin-bottom: 4px;
-        img{
+
+        img {
             width: 72px;
             align-items: center;
             justify-content: center;
             margin-top: 10px;
         }
-        div{
-            p{
+
+        div {
+            p {
                 @include typo (Montserrat, 400, center, $color-primario);
                 font-size: nth($font-size, 2);
                 margin-bottom: 8px;
@@ -233,190 +259,214 @@
 }
 
 /*Newsletter*/
-.form-newsletter{
+.form-newsletter {
     @include typo (Montserrat, 400, center, $color-primario);
     padding: 8px;
     margin: 36px;
     background-color: $color-secundario;
     border-radius: 16px;
-    form{
-        div{
-            h3{
+
+    form {
+        div {
+            h3 {
                 @include typo (Montserrat, 600, center, $color-primario);
             }
         }
-        .form-group{
+
+        .form-group {
             padding: 8px;
             text-align: left;
-            label{
+
+            label {
                 font-size: nth($font-size, 3);
             }
         }
-        .btn-primary{
+
+        .btn-primary {
             background-color: $color-primario;
             color: $color-terciario;
             border-radius: 12px;
-            border-color: $color-primario; 
-        }
+            border-color: $color-primario;
         }
     }
+}
 
 /*------------------------------------P R O D U C T O S-----------------------------------------*/
 
-.enviogratis{
+.enviogratis {
     @extend %flex;
     background-color: $color-secundario;
 }
 
-.seccion-producto{
+.seccion-producto {
     margin-top: 24px;
     margin-bottom: 24px;
     padding-top: 16px;
     background-color: $color-terciario;
-    h2{
+
+    h2 {
         @include typo (Montserrat, 600, center, $color-primario);
         font-size: nth($font-size, 4);
     }
-    .card-seccionproducto{
+
+    .card-seccionproducto {
         @extend %flex;
         flex-wrap: wrap;
         background-color: $color-terciario;
-        div{
-        width: 250px;
-        height: 470px;
-        @include typo (Montserrat, 400, center, $color-terciario);
-        font-size: nth($font-size, 3);
-        margin: 20px;
-        background-color: $color-primario;
-        border-radius: 14px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        transition: 0.3s;
-        &:hover{
-            transform:scale(1.1);
-        }
-        }
-        }
-        img{
+
+        div {
             width: 250px;
-            height: 375px;
-            padding: 16px;
-        }
-        h3{
+            height: 470px;
+            @include typo (Montserrat, 400, center, $color-terciario);
             font-size: nth($font-size, 3);
-            padding-bottom: 12px;
-            @include typo (Montserrat, 600, center, $color-terciario);
-        }
-        .boton-seccionproducto{
-                text-decoration: none;
-                color: $color-primario;
-                background-color: $color-secundario;
-                font-size: nth($font-size, 1);
-                padding: 12px;
-                border-radius: 24px;
-                &:hover {
-                    color: $color-primario;
-                    background-color: $color-terciario;
-                    transition: 0.5s;
-                }
-                &:active{
-                    background-color: $color-secundario;
-                    color: $color-primario;
-                }
+            margin: 20px;
+            background-color: $color-primario;
+            border-radius: 14px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
             }
+        }
+    }
+
+    img {
+        width: 250px;
+        height: 375px;
+        padding: 16px;
+    }
+
+    h3 {
+        font-size: nth($font-size, 3);
+        padding-bottom: 12px;
+        @include typo (Montserrat, 600, center, $color-terciario);
+    }
+
+    .boton-seccionproducto {
+        text-decoration: none;
+        color: $color-primario;
+        background-color: $color-secundario;
+        font-size: nth($font-size, 1);
+        padding: 12px;
+        border-radius: 24px;
+
+        &:hover {
+            color: $color-primario;
+            background-color: $color-terciario;
+            transition: 0.5s;
         }
 
-        .seccion-producto-bebida{
-            padding-top: 16px;
-            background-color: $color-primario;
-            h2{
-                @include typo (Montserrat, 600, center, $color-secundario);
-                font-size: nth($font-size, 4);
+        &:active {
+            background-color: $color-secundario;
+            color: $color-primario;
+        }
+    }
+}
+
+.seccion-producto-bebida {
+    padding-top: 16px;
+    background-color: $color-primario;
+
+    h2 {
+        @include typo (Montserrat, 600, center, $color-secundario);
+        font-size: nth($font-size, 4);
+    }
+
+    .card-seccionproducto {
+        @extend %flex;
+        flex-wrap: wrap;
+        background-color: $color-primario;
+
+        div {
+            width: 250px;
+            height: 350px;
+            @include typo (Montserrat, 400, center, $color-primario);
+            font-size: nth($font-size, 3);
+            margin: 20px;
+            background-color: $color-terciario;
+            border-radius: 14px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
             }
-            .card-seccionproducto{
-                @extend %flex;
-                flex-wrap: wrap;
-                background-color: $color-primario;
-                div{
-                width: 250px;
-                height: 350px;
-                @include typo (Montserrat, 400, center, $color-primario);
-                font-size: nth($font-size, 3);
-                margin: 20px;
-                background-color: $color-terciario;
-                border-radius: 14px;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                transition: 0.3s;
-                &:hover{
-                    transform:scale(1.1);
-                }
-                }
-                }
-                img{
-                    width: 250px;
-                    height: 250px;
-                    padding: 16px;
-                }
-                h3{
-                    font-size: nth($font-size, 3);
-                    padding-bottom: 12px;
-                    @include typo (Montserrat, 600, center, $color-primario);
-                }
-                .boton-seccionproducto{
-                        text-decoration: none;
-                        color: $color-terciario;
-                        background-color: $color-primario;
-                        font-size: nth($font-size, 1);
-                        padding: 12px;
-                        border-radius: 24px;
-                        &:hover {
-                            color: $color-primario;
-                            background-color: $color-secundario;
-                            transition: 0.5s;
-                        }
-                        &:active{
-                            background-color: $color-primario;
-                            color: $color-secundario;
-                        }
-                    }
-                }
+        }
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        padding: 16px;
+    }
+
+    h3 {
+        font-size: nth($font-size, 3);
+        padding-bottom: 12px;
+        @include typo (Montserrat, 600, center, $color-primario);
+    }
+
+    .boton-seccionproducto {
+        text-decoration: none;
+        color: $color-terciario;
+        background-color: $color-primario;
+        font-size: nth($font-size, 1);
+        padding: 12px;
+        border-radius: 24px;
+
+        &:hover {
+            color: $color-primario;
+            background-color: $color-secundario;
+            transition: 0.5s;
+        }
+
+        &:active {
+            background-color: $color-primario;
+            color: $color-secundario;
+        }
+    }
+}
 
 
 /*------------------------------------S E R V I C I O S-----------------------------------------*/
 
-.main-servicios{
-    div{
-        div{
-            h1{
+.main-servicios {
+    div {
+        div {
+            h1 {
                 @include typo (Montserrat, 600, left, $color-primario);
                 font-size: nth($font-size, 5);
                 padding: 6px 12px 6px 12px;
             }
-            p{
+
+            p {
                 @include typo (Montserrat, 400, left, $color-primario);
                 font-size: nth($font-size, 2);
                 padding: 6px 12px 6px 12px;
             }
         }
-        div{
-            img{
+
+        div {
+            img {
                 width: 100%;
             }
         }
     }
 }
 
-section{
-    h2{
+section {
+    h2 {
         font-size: nth($font-size, 4);
         @include typo (Montserrat, 600, center, $color-secundario)
     }
 }
 
-.grid-galeria-servicios{
+.grid-galeria-servicios {
     margin-bottom: 20px;
     display: grid;
     grid-auto-rows: 170px;
@@ -425,35 +475,41 @@ section{
     align-items: center;
     justify-content: center;
     padding: 24px;
-    .grid-item-servicios{
+
+    .grid-item-servicios {
         position: relative;
-            img{
-                width: 90%;
-                height: 90%;
-                object-fit: cover;
-                border-radius: 24px;
-                box-shadow: 4px 4px 16px 2px rgb(172, 172, 172);
-                &:hover{
-                    scale: 1.1;
-                    transition: 0.5s;
-                }
+
+        img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: 4px 4px 16px 2px rgb(172, 172, 172);
+
+            &:hover {
+                scale: 1.1;
+                transition: 0.5s;
             }
-}
+        }
+    }
 }
 
-.form-servicios{
-    form{
+.form-servicios {
+    form {
         background-color: $color-primario;
         padding: 12px;
-        div{
-            h3{
+        div {
+            h3 {
                 @include typo (Montserrat, 600, center, $color-secundario);
                 font-size: nth($font-size, 4);
                 margin-top: 6px;
                 margin-bottom: 6px;
             }
         }
-        .form-groupservicios{
+    }
+}
+
+.form-groupservicios {
             background-color: $color-terciario;
             align-content: center;
             margin-top: 16px;
@@ -463,75 +519,67 @@ section{
             border: 2px $color-primario solid !important;
             padding: 24px;
             border-radius: 16px;
-            div{
-                text-align:left;
+            div {
+                text-align: left;
                 margin-bottom: 8px;
             }
-        .form-check{
-            input{
-                padding: 8px;
+            .form-check {
+                input {
+                    padding: 8px;
+                }
+            }
+            .btn-primary-servicios {
+                background-color: $color-primario;
+                color: $color-terciario;
+                border-radius: 12px;
+                border-color: $color-primario;
+
+                &:hover {
+                    color: $color-primario;
+                    background-color: $color-secundario;
+                    border-color: $color-secundario;
+                    ;
+                    transition: 0.5s;
+                }
             }
         }
-        .btn-primary-servicios{
+
+        /*------------------------------------C O N T A C T O-----------------------------------------*/
+
+        .titulo-formcontacto{
+            h1{
+                @include typo (Montserrat, 600, center, $color-primario);
+                font-size: nth($font-size, 4);
+                margin-top: 12px;
+            }
+        }
+
+        .form-contacto{
+            margin: 28px
+        }
+
+        .contenedor-mapa{
             background-color: $color-primario;
-            color: $color-terciario;
-            border-radius: 12px;
-            border-color: $color-primario;
-            &:hover {
-                color: $color-primario;
-                background-color: $color-secundario;
-                border-color: $color-secundario;;
-                transition: 0.5s;
+            padding: 16px;
+            .titulo-mapa{
+                h2{
+                    @include typo (Montserrat, 600, center, $color-secundario);
+                    font-size: nth($font-size, 4);
+                    background-color: $color-primario;
+                }
             }
-        }
-    }
-
-/*------------------------------------C O N T A C T O-----------------------------------------*/
-
-.main-contacto{
-    div{
-        h1{
-        @include typo (Montserrat, 600, center, $color-primario);
-        font-size: nth($font-size, 5);
-        margin: 16px;
-        }
-    }
-}
-
-.formulario-contacto{
-    .formulario-contenedor-contacto{
-        .formulario-contacto-div{
-            background-color: rgb(222, 222, 222);
-            align-content: center;
-                div{
-                    margin-left: 24px;
-                        text-align:left;
-                        margin-bottom: 8px;
-                        padding: 8px;
-                        input{
-                            text-align: justify;
-                        }
-                        h4{
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 600;
-                            font-size: nth($font-size, 3);
-                        }
+    
+            .mapa {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                background-color: $color-primario;
+                div {
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        padding: 12px;
                     }
                 }
-                }
             }
-
-
-.mapa{
-    padding: 26px;
-    iframe{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;  
-    }
-    }
-    }
-}
+        }

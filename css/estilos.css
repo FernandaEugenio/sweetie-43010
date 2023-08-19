@@ -507,8 +507,7 @@ section h2 {
 
 .form-servicios form {
   background-color: #323232;
-  padding: 12px;
-  /*------------------------------------C O N T A C T O-----------------------------------------*/ }
+  padding: 12px; }
   .form-servicios form div h3 {
     font-family: Montserrat;
     font-weight: 600;
@@ -517,61 +516,64 @@ section h2 {
     font-size: 26px;
     margin-top: 6px;
     margin-bottom: 6px; }
-  .form-servicios form .form-groupservicios {
-    background-color: #ffffff;
-    align-content: center;
-    margin-top: 16px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 2px #323232 solid !important;
-    padding: 24px;
-    border-radius: 16px; }
-    .form-servicios form .form-groupservicios div {
-      text-align: left;
-      margin-bottom: 8px; }
-    .form-servicios form .form-groupservicios .form-check input {
-      padding: 8px; }
-    .form-servicios form .form-groupservicios .btn-primary-servicios {
-      background-color: #323232;
-      color: #ffffff;
-      border-radius: 12px;
-      border-color: #323232; }
-      .form-servicios form .form-groupservicios .btn-primary-servicios:hover {
-        color: #323232;
-        background-color: #ffb7fe;
-        border-color: #ffb7fe;
-        transition: 0.5s; }
-  .form-servicios form .main-contacto div h1 {
+
+.form-groupservicios {
+  background-color: #ffffff;
+  align-content: center;
+  margin-top: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 2px #323232 solid !important;
+  padding: 24px;
+  border-radius: 16px; }
+  .form-groupservicios div {
+    text-align: left;
+    margin-bottom: 8px; }
+  .form-groupservicios .form-check input {
+    padding: 8px; }
+  .form-groupservicios .btn-primary-servicios {
+    background-color: #323232;
+    color: #ffffff;
+    border-radius: 12px;
+    border-color: #323232; }
+    .form-groupservicios .btn-primary-servicios:hover {
+      color: #323232;
+      background-color: #ffb7fe;
+      border-color: #ffb7fe;
+      transition: 0.5s; }
+
+/*------------------------------------C O N T A C T O-----------------------------------------*/
+.titulo-formcontacto h1 {
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  color: #323232;
+  font-size: 26px;
+  margin-top: 12px; }
+
+.form-contacto {
+  margin: 28px; }
+
+.contenedor-mapa {
+  background-color: #323232;
+  padding: 16px; }
+  .contenedor-mapa .titulo-mapa h2 {
     font-family: Montserrat;
     font-weight: 600;
     text-align: center;
-    color: #323232;
-    font-size: 36px;
-    margin: 16px; }
-  .form-servicios form .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div {
-    background-color: #dedede;
-    align-content: center; }
-    .form-servicios form .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div {
-      margin-left: 24px;
-      text-align: left;
-      margin-bottom: 8px;
-      padding: 8px; }
-      .form-servicios form .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div input {
-        text-align: justify; }
-      .form-servicios form .formulario-contacto .formulario-contenedor-contacto .formulario-contacto-div div h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 18px; }
-  .form-servicios form .mapa {
-    padding: 26px; }
-    .form-servicios form .mapa iframe {
+    color: #ffb7fe;
+    font-size: 26px;
+    background-color: #323232; }
+  .contenedor-mapa .mapa {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #323232; }
+    .contenedor-mapa .mapa div iframe {
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
+      padding: 12px; }
 
 footer {
   background-color: #323232;
@@ -703,7 +705,18 @@ footer {
     height: 70%;
     align-items: center; } }
 
-/*-----------------------PRODUCTOS-----------------------*/
+/*-----------------------P R O D U C T O S-----------------------*/
 @media screen and (max-width: 450px) {
   .enviogratis img {
-    width: 80%; } }
+    width: 90%; } }
+
+@media screen and (max-width: 450px) {
+  .seccion-producto-bebida h2 {
+    font-size: 18px; } }
+
+/*-----------------------C O N T A C T O-----------------------*/
+@media screen and (max-width: 450px) {
+  .contenedor-mapa .titulo-mapa h2 {
+    font-size: 18px; }
+  .contenedor-mapa .mapa {
+    flex-direction: column; } }

@@ -173,11 +173,34 @@
     }
 }
 
-/*-----------------------PRODUCTOS-----------------------*/
+/*-----------------------P R O D U C T O S-----------------------*/
 @media screen and (max-width:450px){
     .enviogratis{
         img{
-            width: 80%;
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .seccion-producto-bebida{
+        h2{
+            font-size: 18px;
+        }
+    }
+}
+
+/*-----------------------C O N T A C T O-----------------------*/
+
+@media screen and (max-width:450px){
+    .contenedor-mapa{
+        .titulo-mapa{
+            h2{
+                font-size: 18px;
+            }
+        }
+        .mapa{
+            flex-direction: column;
         }
     }
 }
