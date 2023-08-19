@@ -172,3 +172,23 @@
         }
     }
 }
+
+/*-----------------------PRODUCTOS-----------------------*/
+@media screen and (max-width:600px){
+.banner-mobile{
+    display: none;
+}
+}
+
+@media screen and (max-width:1920px){
+    .banner-mobile{
+        display: none;
+    }
+    }
+
+
+@media screen and (max-width:750px){
+    .banner-desktop{
+        display: none;
+    }
+    }
