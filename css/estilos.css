@@ -513,7 +513,7 @@ section h2 {
     font-weight: 600;
     text-align: center;
     color: #ffb7fe;
-    font-size: 26px;
+    font-size: 18px;
     margin-top: 6px;
     margin-bottom: 6px; }
 
@@ -722,10 +722,6 @@ footer {
 @media screen and (max-width: 450px) {
   .enviogratis img {
     width: 90%; } }
-
-@media screen and (max-width: 450px) {
-  .seccion-producto-bebida h2 {
-    font-size: 18px; } }
 
 /*-----------------------C O N T A C T O-----------------------*/
 @media screen and (max-width: 450px) {

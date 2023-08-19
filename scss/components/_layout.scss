@@ -501,7 +501,7 @@ section {
         div {
             h3 {
                 @include typo (Montserrat, 600, center, $color-secundario);
-                font-size: nth($font-size, 4);
+                font-size: nth($font-size, 3);
                 margin-top: 6px;
                 margin-bottom: 6px;
             }
